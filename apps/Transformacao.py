@@ -12,3 +12,6 @@ if __name__ == "__main__":
     resultado = despachantes.select("data").groupBy(year("data").alias("ano")).count()
     resultado.write.mode("overwrite").parquet("/app/output/vendas_por_ano")
     spark.stop()
+
+    ### para executar o script com parâmetros, use o seguinte comando:
+    ### spark-submit (.\run.ps1) Transformacao.py
