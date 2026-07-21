@@ -28,4 +28,4 @@ if __name__ == "__main__":
     spark.stop()
 
     ## para executar o script com parâmetros, use o seguinte comando:
-    ## spark-submit (.\run.ps1) apps/Transformacao_parametros.py --input /app/data/despachantes.csv --output /app/output/vendas_por_ano
+    ## spark-submit (.\run.ps1) Gravar_postgres.py
