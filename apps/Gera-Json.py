@@ -21,3 +21,5 @@ for i, post in enumerate(posts,start=1):
         json.dump(post,f, ensure_ascii=False)
     print(f"Arquivo gerado: {arquivo} criado com sucesso!")
     time.sleep(5)  # Aguarda 5 segundos antes de criar o próximo arquivo
+
+    ## Para executar o script, basta rodar o comando: python Gera-Json.py
