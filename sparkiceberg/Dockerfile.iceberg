@@ -1,0 +1,15 @@
+FROM spark:3.5.6
+
+USER root
+
+RUN mkdir -p /opt/spark/jars-extra
+
+ADD https://repo1.maven.org/maven2/org/apache/iceberg/iceberg-spark-runtime-3.5_2.12/1.8.1/iceberg-spark-runtime-3.5_2.12-1.8.1.jar /opt/spark/jars-extra/iceberg-spark-runtime-3.5_2.12-1.8.1.jar
+
+RUN chmod 644 /opt/spark/jars-extra/iceberg-spark-runtime-3.5_2.12-1.8.1.jar
+
+RUN pip install ipython pandas
+
+ENV SPARK_EXTRA_CLASSPATH=/opt/spark/jars-extra/iceberg-spark-runtime-3.5_2.12-1.8.1.jar
+
+USER spark

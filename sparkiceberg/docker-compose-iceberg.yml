@@ -1,0 +1,41 @@
+services:
+  spark-iceberg-master:
+    build:
+      context: .
+      dockerfile: Dockerfile.iceberg
+    container_name: spark-iceberg-master
+    env_file:
+      - .env
+    environment:
+      - SPARK_NO_DAEMONIZE=true
+      - SPARK_CLASSPATH=/opt/spark/jars-extra/iceberg-spark-runtime-3.5_2.12-1.8.1.jar
+    ports:
+      - "8082:8080"
+      - "7078:7077"
+      - "4041:4040"
+    volumes:
+      - ./apps:/app/apps
+      - ./data:/app/data
+      - ./output:/app/output
+      - ./git:/app/git
+    command: /opt/spark/bin/spark-class org.apache.spark.deploy.master.Master
+
+  spark-iceberg-worker:
+    build:
+      context: .
+      dockerfile: Dockerfile.iceberg
+    container_name: spark-iceberg-worker
+    depends_on:
+      - spark-iceberg-master
+    env_file:
+      - .env
+    environment:
+      - SPARK_NO_DAEMONIZE=true
+      - SPARK_CLASSPATH=/opt/spark/jars-extra/iceberg-spark-runtime-3.5_2.12-1.8.1.jar
+    ports:
+      - "8083:8081"
+    volumes:
+      - ./apps:/app/apps
+      - ./data:/app/data
+      - ./output:/app/output
+    command: /opt/spark/bin/spark-class org.apache.spark.deploy.worker.Worker spark://spark-iceberg-master:7077
