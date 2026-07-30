@@ -1,0 +1,1 @@
+docker exec -it spark-master bash -lc "cd /app/output && /opt/spark/bin/spark-submit --master spark://spark-master:7077 --jars /opt/spark/jars-extra/postgresql-42.7.9.jar --conf spark.sql.warehouse.dir=/app/output/spark-warehouse /app/apps/$args"
