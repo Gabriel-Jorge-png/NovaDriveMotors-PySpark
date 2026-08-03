@@ -1,0 +1,78 @@
+{
+  "format-version" : 2,
+  "table-uuid" : "51a28142-7591-42ca-877a-475e739119ca",
+  "location" : "/app/output/iceberg-warehouse/datalake/vendedores",
+  "last-sequence-number" : 1,
+  "last-updated-ms" : 1785774155892,
+  "last-column-id" : 2,
+  "current-schema-id" : 0,
+  "schemas" : [ {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "VendedorID",
+      "required" : false,
+      "type" : "long"
+    }, {
+      "id" : 2,
+      "name" : "Vendedor",
+      "required" : false,
+      "type" : "string"
+    } ]
+  } ],
+  "default-spec-id" : 0,
+  "partition-specs" : [ {
+    "spec-id" : 0,
+    "fields" : [ ]
+  } ],
+  "last-partition-id" : 999,
+  "default-sort-order-id" : 0,
+  "sort-orders" : [ {
+    "order-id" : 0,
+    "fields" : [ ]
+  } ],
+  "properties" : {
+    "owner" : "spark",
+    "write.parquet.compression-codec" : "zstd"
+  },
+  "current-snapshot-id" : 691794016705589693,
+  "refs" : {
+    "main" : {
+      "snapshot-id" : 691794016705589693,
+      "type" : "branch"
+    }
+  },
+  "snapshots" : [ {
+    "sequence-number" : 1,
+    "snapshot-id" : 691794016705589693,
+    "timestamp-ms" : 1785774155892,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "app-20260803161327-0000",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "962",
+      "changed-partition-count" : "1",
+      "total-records" : "10",
+      "total-files-size" : "962",
+      "total-data-files" : "1",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0",
+      "engine-version" : "3.5.6",
+      "app-id" : "app-20260803161327-0000",
+      "engine-name" : "spark",
+      "iceberg-version" : "Apache Iceberg 1.8.1 (commit 9ce0fcf0af7becf25ad9fc996c3bad2afdcfd33d)"
+    },
+    "manifest-list" : "/app/output/iceberg-warehouse/datalake/vendedores/metadata/snap-691794016705589693-1-10a2f70d-5f86-49a1-bb56-2f20663ef796.avro",
+    "schema-id" : 0
+  } ],
+  "statistics" : [ ],
+  "partition-statistics" : [ ],
+  "snapshot-log" : [ {
+    "timestamp-ms" : 1785774155892,
+    "snapshot-id" : 691794016705589693
+  } ],
+  "metadata-log" : [ ]
+}

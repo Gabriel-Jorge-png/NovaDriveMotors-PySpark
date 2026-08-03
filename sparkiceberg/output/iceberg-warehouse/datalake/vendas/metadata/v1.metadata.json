@@ -1,0 +1,93 @@
+{
+  "format-version" : 2,
+  "table-uuid" : "658d3d28-83f0-4df8-9851-68dc16339572",
+  "location" : "/app/output/iceberg-warehouse/datalake/vendas",
+  "last-sequence-number" : 1,
+  "last-updated-ms" : 1785774166822,
+  "last-column-id" : 5,
+  "current-schema-id" : 0,
+  "schemas" : [ {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "VendasID",
+      "required" : false,
+      "type" : "long"
+    }, {
+      "id" : 2,
+      "name" : "VendedorID",
+      "required" : false,
+      "type" : "long"
+    }, {
+      "id" : 3,
+      "name" : "ClienteID",
+      "required" : false,
+      "type" : "long"
+    }, {
+      "id" : 4,
+      "name" : "Data",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 5,
+      "name" : "Total",
+      "required" : false,
+      "type" : "double"
+    } ]
+  } ],
+  "default-spec-id" : 0,
+  "partition-specs" : [ {
+    "spec-id" : 0,
+    "fields" : [ ]
+  } ],
+  "last-partition-id" : 999,
+  "default-sort-order-id" : 0,
+  "sort-orders" : [ {
+    "order-id" : 0,
+    "fields" : [ ]
+  } ],
+  "properties" : {
+    "owner" : "spark",
+    "write.parquet.compression-codec" : "zstd"
+  },
+  "current-snapshot-id" : 4638793976690239411,
+  "refs" : {
+    "main" : {
+      "snapshot-id" : 4638793976690239411,
+      "type" : "branch"
+    }
+  },
+  "snapshots" : [ {
+    "sequence-number" : 1,
+    "snapshot-id" : 4638793976690239411,
+    "timestamp-ms" : 1785774166822,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "app-20260803161327-0000",
+      "added-data-files" : "1",
+      "added-records" : "400",
+      "added-files-size" : "6341",
+      "changed-partition-count" : "1",
+      "total-records" : "400",
+      "total-files-size" : "6341",
+      "total-data-files" : "1",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0",
+      "engine-version" : "3.5.6",
+      "app-id" : "app-20260803161327-0000",
+      "engine-name" : "spark",
+      "iceberg-version" : "Apache Iceberg 1.8.1 (commit 9ce0fcf0af7becf25ad9fc996c3bad2afdcfd33d)"
+    },
+    "manifest-list" : "/app/output/iceberg-warehouse/datalake/vendas/metadata/snap-4638793976690239411-1-3e56f691-e5c8-40a7-9548-ab089b4f56dc.avro",
+    "schema-id" : 0
+  } ],
+  "statistics" : [ ],
+  "partition-statistics" : [ ],
+  "snapshot-log" : [ {
+    "timestamp-ms" : 1785774166822,
+    "snapshot-id" : 4638793976690239411
+  } ],
+  "metadata-log" : [ ]
+}

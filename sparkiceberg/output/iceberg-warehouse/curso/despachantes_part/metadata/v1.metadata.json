@@ -1,0 +1,103 @@
+{
+  "format-version" : 2,
+  "table-uuid" : "963b0f9f-c768-4965-8801-f7066120edf5",
+  "location" : "/app/output/iceberg-warehouse/curso/despachantes_part",
+  "last-sequence-number" : 1,
+  "last-updated-ms" : 1785768197339,
+  "last-column-id" : 6,
+  "current-schema-id" : 0,
+  "schemas" : [ {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "id",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 2,
+      "name" : "nome",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 3,
+      "name" : "status",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 4,
+      "name" : "cidade",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 5,
+      "name" : "vendas",
+      "required" : false,
+      "type" : "int"
+    }, {
+      "id" : 6,
+      "name" : "data",
+      "required" : false,
+      "type" : "string"
+    } ]
+  } ],
+  "default-spec-id" : 0,
+  "partition-specs" : [ {
+    "spec-id" : 0,
+    "fields" : [ {
+      "name" : "cidade",
+      "transform" : "identity",
+      "source-id" : 4,
+      "field-id" : 1000
+    } ]
+  } ],
+  "last-partition-id" : 1000,
+  "default-sort-order-id" : 0,
+  "sort-orders" : [ {
+    "order-id" : 0,
+    "fields" : [ ]
+  } ],
+  "properties" : {
+    "owner" : "spark",
+    "write.parquet.compression-codec" : "zstd"
+  },
+  "current-snapshot-id" : 4385427593526049616,
+  "refs" : {
+    "main" : {
+      "snapshot-id" : 4385427593526049616,
+      "type" : "branch"
+    }
+  },
+  "snapshots" : [ {
+    "sequence-number" : 1,
+    "snapshot-id" : 4385427593526049616,
+    "timestamp-ms" : 1785768197339,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "app-20260803140457-0000",
+      "added-data-files" : "3",
+      "added-records" : "10",
+      "added-files-size" : "6044",
+      "changed-partition-count" : "3",
+      "total-records" : "10",
+      "total-files-size" : "6044",
+      "total-data-files" : "3",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0",
+      "engine-version" : "3.5.6",
+      "app-id" : "app-20260803140457-0000",
+      "engine-name" : "spark",
+      "iceberg-version" : "Apache Iceberg 1.8.1 (commit 9ce0fcf0af7becf25ad9fc996c3bad2afdcfd33d)"
+    },
+    "manifest-list" : "/app/output/iceberg-warehouse/curso/despachantes_part/metadata/snap-4385427593526049616-1-6c98f9c2-9899-4a3b-826d-5ce0b580f919.avro",
+    "schema-id" : 0
+  } ],
+  "statistics" : [ ],
+  "partition-statistics" : [ ],
+  "snapshot-log" : [ {
+    "timestamp-ms" : 1785768197339,
+    "snapshot-id" : 4385427593526049616
+  } ],
+  "metadata-log" : [ ]
+}

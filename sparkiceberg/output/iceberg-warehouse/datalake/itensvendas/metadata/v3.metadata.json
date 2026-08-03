@@ -1,0 +1,143 @@
+{
+  "format-version" : 2,
+  "table-uuid" : "9f2d040e-54d3-4585-93c6-a11ff85c7fe3",
+  "location" : "/app/output/iceberg-warehouse/datalake/itensvendas",
+  "last-sequence-number" : 2,
+  "last-updated-ms" : 1785781076760,
+  "last-column-id" : 7,
+  "current-schema-id" : 0,
+  "schemas" : [ {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "ProdutoID",
+      "required" : false,
+      "type" : "long"
+    }, {
+      "id" : 2,
+      "name" : "VendasID",
+      "required" : false,
+      "type" : "long"
+    }, {
+      "id" : 3,
+      "name" : "Quantidade",
+      "required" : false,
+      "type" : "long"
+    }, {
+      "id" : 4,
+      "name" : "ValorUnitario",
+      "required" : false,
+      "type" : "double"
+    }, {
+      "id" : 5,
+      "name" : "ValorTotal",
+      "required" : false,
+      "type" : "double"
+    }, {
+      "id" : 6,
+      "name" : "Desconto",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 7,
+      "name" : "TotalComDesconto",
+      "required" : false,
+      "type" : "double"
+    } ]
+  } ],
+  "default-spec-id" : 0,
+  "partition-specs" : [ {
+    "spec-id" : 0,
+    "fields" : [ ]
+  } ],
+  "last-partition-id" : 999,
+  "default-sort-order-id" : 0,
+  "sort-orders" : [ {
+    "order-id" : 0,
+    "fields" : [ ]
+  } ],
+  "properties" : {
+    "owner" : "spark",
+    "write.parquet.compression-codec" : "zstd"
+  },
+  "current-snapshot-id" : 5692244523824484397,
+  "refs" : {
+    "main" : {
+      "snapshot-id" : 5692244523824484397,
+      "type" : "branch"
+    }
+  },
+  "snapshots" : [ {
+    "sequence-number" : 1,
+    "snapshot-id" : 5692244523824484397,
+    "timestamp-ms" : 1785774178618,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "app-20260803161327-0000",
+      "added-data-files" : "1",
+      "added-records" : "940",
+      "added-files-size" : "14154",
+      "changed-partition-count" : "1",
+      "total-records" : "940",
+      "total-files-size" : "14154",
+      "total-data-files" : "1",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0",
+      "engine-version" : "3.5.6",
+      "app-id" : "app-20260803161327-0000",
+      "engine-name" : "spark",
+      "iceberg-version" : "Apache Iceberg 1.8.1 (commit 9ce0fcf0af7becf25ad9fc996c3bad2afdcfd33d)"
+    },
+    "manifest-list" : "/app/output/iceberg-warehouse/datalake/itensvendas/metadata/snap-5692244523824484397-1-d7e8f0c5-6023-4844-95d3-e14a0895a145.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 2,
+    "snapshot-id" : 8530417977152492550,
+    "parent-snapshot-id" : 5692244523824484397,
+    "timestamp-ms" : 1785780706985,
+    "summary" : {
+      "operation" : "overwrite",
+      "spark.app.id" : "app-20260803161327-0000",
+      "added-data-files" : "1",
+      "deleted-data-files" : "1",
+      "added-records" : "937",
+      "deleted-records" : "940",
+      "added-files-size" : "14148",
+      "removed-files-size" : "14154",
+      "changed-partition-count" : "1",
+      "total-records" : "937",
+      "total-files-size" : "14148",
+      "total-data-files" : "1",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0",
+      "engine-version" : "3.5.6",
+      "app-id" : "app-20260803161327-0000",
+      "engine-name" : "spark",
+      "iceberg-version" : "Apache Iceberg 1.8.1 (commit 9ce0fcf0af7becf25ad9fc996c3bad2afdcfd33d)"
+    },
+    "manifest-list" : "/app/output/iceberg-warehouse/datalake/itensvendas/metadata/snap-8530417977152492550-1-e1cbdc5a-5293-4faf-8114-75dfb0dc0596.avro",
+    "schema-id" : 0
+  } ],
+  "statistics" : [ ],
+  "partition-statistics" : [ ],
+  "snapshot-log" : [ {
+    "timestamp-ms" : 1785774178618,
+    "snapshot-id" : 5692244523824484397
+  }, {
+    "timestamp-ms" : 1785780706985,
+    "snapshot-id" : 8530417977152492550
+  }, {
+    "timestamp-ms" : 1785781076760,
+    "snapshot-id" : 5692244523824484397
+  } ],
+  "metadata-log" : [ {
+    "timestamp-ms" : 1785774178618,
+    "metadata-file" : "/app/output/iceberg-warehouse/datalake/itensvendas/metadata/v1.metadata.json"
+  }, {
+    "timestamp-ms" : 1785780706985,
+    "metadata-file" : "/app/output/iceberg-warehouse/datalake/itensvendas/metadata/v2.metadata.json"
+  } ]
+}

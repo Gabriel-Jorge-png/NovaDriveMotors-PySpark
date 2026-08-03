@@ -1,0 +1,93 @@
+{
+  "format-version" : 2,
+  "table-uuid" : "060bacbe-c00d-4975-bccc-40c4d4a60b9d",
+  "location" : "/app/output/iceberg-warehouse/datalake/clientes",
+  "last-sequence-number" : 1,
+  "last-updated-ms" : 1785774123570,
+  "last-column-id" : 5,
+  "current-schema-id" : 0,
+  "schemas" : [ {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "ClienteID",
+      "required" : false,
+      "type" : "long"
+    }, {
+      "id" : 2,
+      "name" : "Cliente",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 3,
+      "name" : "Estado",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 4,
+      "name" : "Genero",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 5,
+      "name" : "Status",
+      "required" : false,
+      "type" : "string"
+    } ]
+  } ],
+  "default-spec-id" : 0,
+  "partition-specs" : [ {
+    "spec-id" : 0,
+    "fields" : [ ]
+  } ],
+  "last-partition-id" : 999,
+  "default-sort-order-id" : 0,
+  "sort-orders" : [ {
+    "order-id" : 0,
+    "fields" : [ ]
+  } ],
+  "properties" : {
+    "owner" : "spark",
+    "write.parquet.compression-codec" : "zstd"
+  },
+  "current-snapshot-id" : 4489678331495452799,
+  "refs" : {
+    "main" : {
+      "snapshot-id" : 4489678331495452799,
+      "type" : "branch"
+    }
+  },
+  "snapshots" : [ {
+    "sequence-number" : 1,
+    "snapshot-id" : 4489678331495452799,
+    "timestamp-ms" : 1785774123570,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "app-20260803161327-0000",
+      "added-data-files" : "1",
+      "added-records" : "250",
+      "added-files-size" : "4793",
+      "changed-partition-count" : "1",
+      "total-records" : "250",
+      "total-files-size" : "4793",
+      "total-data-files" : "1",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0",
+      "engine-version" : "3.5.6",
+      "app-id" : "app-20260803161327-0000",
+      "engine-name" : "spark",
+      "iceberg-version" : "Apache Iceberg 1.8.1 (commit 9ce0fcf0af7becf25ad9fc996c3bad2afdcfd33d)"
+    },
+    "manifest-list" : "/app/output/iceberg-warehouse/datalake/clientes/metadata/snap-4489678331495452799-1-071edff0-8764-4f1a-b3ee-45a1bb2af3b3.avro",
+    "schema-id" : 0
+  } ],
+  "statistics" : [ ],
+  "partition-statistics" : [ ],
+  "snapshot-log" : [ {
+    "timestamp-ms" : 1785774123570,
+    "snapshot-id" : 4489678331495452799
+  } ],
+  "metadata-log" : [ ]
+}
