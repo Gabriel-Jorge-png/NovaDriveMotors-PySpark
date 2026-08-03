@@ -17,7 +17,6 @@ services:
       - ./apps:/app/apps
       - ./data:/app/data
       - ./output:/app/output
-      - ./git:/app/git
     command: /opt/spark/bin/spark-class org.apache.spark.deploy.master.Master
 
   spark-iceberg-worker:

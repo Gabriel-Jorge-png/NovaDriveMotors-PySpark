@@ -1,0 +1,163 @@
+{
+  "format-version" : 2,
+  "table-uuid" : "fa430e71-c2e9-4338-9dac-4b629b03ccd7",
+  "location" : "/app/output/iceberg-warehouse/curso/despachantes",
+  "last-sequence-number" : 3,
+  "last-updated-ms" : 1785766275573,
+  "last-column-id" : 6,
+  "current-schema-id" : 0,
+  "schemas" : [ {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "id",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 2,
+      "name" : "nome",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 3,
+      "name" : "status",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 4,
+      "name" : "cidade",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 5,
+      "name" : "vendas",
+      "required" : false,
+      "type" : "int"
+    }, {
+      "id" : 6,
+      "name" : "data",
+      "required" : false,
+      "type" : "string"
+    } ]
+  } ],
+  "default-spec-id" : 0,
+  "partition-specs" : [ {
+    "spec-id" : 0,
+    "fields" : [ ]
+  } ],
+  "last-partition-id" : 999,
+  "default-sort-order-id" : 0,
+  "sort-orders" : [ {
+    "order-id" : 0,
+    "fields" : [ ]
+  } ],
+  "properties" : {
+    "owner" : "spark",
+    "write.parquet.compression-codec" : "zstd"
+  },
+  "current-snapshot-id" : 6475094813477983619,
+  "refs" : {
+    "main" : {
+      "snapshot-id" : 6475094813477983619,
+      "type" : "branch"
+    }
+  },
+  "snapshots" : [ {
+    "sequence-number" : 1,
+    "snapshot-id" : 8835556428785064257,
+    "timestamp-ms" : 1785422557563,
+    "summary" : {
+      "operation" : "overwrite",
+      "spark.app.id" : "app-20260730143546-0000",
+      "added-data-files" : "1",
+      "added-records" : "10",
+      "added-files-size" : "2260",
+      "changed-partition-count" : "1",
+      "total-records" : "10",
+      "total-files-size" : "2260",
+      "total-data-files" : "1",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0",
+      "engine-version" : "3.5.6",
+      "app-id" : "app-20260730143546-0000",
+      "engine-name" : "spark",
+      "iceberg-version" : "Apache Iceberg 1.8.1 (commit 9ce0fcf0af7becf25ad9fc996c3bad2afdcfd33d)"
+    },
+    "manifest-list" : "/app/output/iceberg-warehouse/curso/despachantes/metadata/snap-8835556428785064257-1-4e816197-b3fe-4052-96f0-a0124ef11c2b.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 2,
+    "snapshot-id" : 2460570787034542950,
+    "parent-snapshot-id" : 8835556428785064257,
+    "timestamp-ms" : 1785766058344,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "app-20260803140457-0000",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "1790",
+      "changed-partition-count" : "1",
+      "total-records" : "11",
+      "total-files-size" : "4050",
+      "total-data-files" : "2",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0",
+      "engine-version" : "3.5.6",
+      "app-id" : "app-20260803140457-0000",
+      "engine-name" : "spark",
+      "iceberg-version" : "Apache Iceberg 1.8.1 (commit 9ce0fcf0af7becf25ad9fc996c3bad2afdcfd33d)"
+    },
+    "manifest-list" : "/app/output/iceberg-warehouse/curso/despachantes/metadata/snap-2460570787034542950-1-67842a79-49a5-4db9-b00b-1c2b2855f320.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 3,
+    "snapshot-id" : 6475094813477983619,
+    "parent-snapshot-id" : 2460570787034542950,
+    "timestamp-ms" : 1785766275573,
+    "summary" : {
+      "operation" : "overwrite",
+      "spark.app.id" : "app-20260803140457-0000",
+      "added-data-files" : "1",
+      "deleted-data-files" : "1",
+      "added-records" : "10",
+      "deleted-records" : "10",
+      "added-files-size" : "2260",
+      "removed-files-size" : "2260",
+      "changed-partition-count" : "1",
+      "total-records" : "11",
+      "total-files-size" : "4050",
+      "total-data-files" : "2",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0",
+      "engine-version" : "3.5.6",
+      "app-id" : "app-20260803140457-0000",
+      "engine-name" : "spark",
+      "iceberg-version" : "Apache Iceberg 1.8.1 (commit 9ce0fcf0af7becf25ad9fc996c3bad2afdcfd33d)"
+    },
+    "manifest-list" : "/app/output/iceberg-warehouse/curso/despachantes/metadata/snap-6475094813477983619-1-c30b152b-c684-4e9c-ae5b-f8f4de2e1b86.avro",
+    "schema-id" : 0
+  } ],
+  "statistics" : [ ],
+  "partition-statistics" : [ ],
+  "snapshot-log" : [ {
+    "timestamp-ms" : 1785422557563,
+    "snapshot-id" : 8835556428785064257
+  }, {
+    "timestamp-ms" : 1785766058344,
+    "snapshot-id" : 2460570787034542950
+  }, {
+    "timestamp-ms" : 1785766275573,
+    "snapshot-id" : 6475094813477983619
+  } ],
+  "metadata-log" : [ {
+    "timestamp-ms" : 1785422557563,
+    "metadata-file" : "/app/output/iceberg-warehouse/curso/despachantes/metadata/v1.metadata.json"
+  }, {
+    "timestamp-ms" : 1785766058344,
+    "metadata-file" : "/app/output/iceberg-warehouse/curso/despachantes/metadata/v2.metadata.json"
+  } ]
+}
